@@ -1,0 +1,42 @@
+﻿@model KatmanlıMimari.Models.SinifModel
+
+@{
+    ViewBag.Title = "Detay";
+}
+
+<h2>Detay</h2>
+
+<div>
+    <h4>Sinif</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sinif.Kademe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sinif.Kademe)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Sinif.Sube)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sinif.Sube)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sinif.sinifMevcut)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sinif.sinifMevcut)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Sinif.SinifID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

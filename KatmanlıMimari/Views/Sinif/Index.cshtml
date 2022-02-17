@@ -1,0 +1,51 @@
+﻿@model KatmanlıMimari.Models.SinifModel
+@{
+    ViewBag.Title = "Index";
+}
+<a class="btn btn-success"href="/Sinif/Ekle">Ekle</a>
+<a class="btn btn-success"href="/Sinif/Sube"> A Şubesi</a>
+@if (Model.slist != null)
+{
+    <table class=" table  table-bordered table table-hover">
+
+        <thead>
+            <tr>
+                <th>Sınıf</th>
+                <th>Şube</th>
+                <th>Kademe</th>
+                <th>Detay</th>
+                <th>Güncelle</th>
+                <th>Sil</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+            @foreach (var item in Model.slist)
+            {
+            <tr>
+                <td>@item.SinifID</td>
+                <td>@item.Sube</td>
+                <td>@item.Kademe</td>
+                <td>
+                    <a href="/Sinif/Detay/@item.SinifID">Detay </a>
+                </td>
+
+                <td>
+                    <a href="/Sinif/Guncelle/@item.SinifID">Güncelle </a>
+                </td>
+
+                <td>
+                    <a href="/Sinif/Sil/@item.SinifID">Sil </a>
+                </td>
+
+            </tr>
+
+            }
+        </tbody>
+
+    </table>}
+else
+{
+    <p>Sınıf listesi bulunamadı :(  </p>}
