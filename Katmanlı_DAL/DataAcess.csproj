@@ -52,17 +52,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataContext.cs" />
-    <Compile Include="Migrations\202202170633297_ekledb.cs" />
-    <Compile Include="Migrations\202202170633297_ekledb.designer.cs">
-      <DependentUpon>202202170633297_ekledb.cs</DependentUpon>
+    <Compile Include="Migrations\202202181035124_ekledb.cs" />
+    <Compile Include="Migrations\202202181035124_ekledb.designer.cs">
+      <DependentUpon>202202181035124_ekledb.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202202170905498_eklesinalan.cs" />
-    <Compile Include="Migrations\202202170905498_eklesinalan.designer.cs">
-      <DependentUpon>202202170905498_eklesinalan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202202171113209_ekleee.cs" />
-    <Compile Include="Migrations\202202171113209_ekleee.designer.cs">
-      <DependentUpon>202202171113209_ekleee.cs</DependentUpon>
+    <Compile Include="Migrations\202202181037268_ekletbl.cs" />
+    <Compile Include="Migrations\202202181037268_ekletbl.designer.cs">
+      <DependentUpon>202202181037268_ekletbl.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -81,14 +77,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202202170633297_ekledb.resx">
-      <DependentUpon>202202170633297_ekledb.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202202181035124_ekledb.resx">
+      <DependentUpon>202202181035124_ekledb.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202202170905498_eklesinalan.resx">
-      <DependentUpon>202202170905498_eklesinalan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202202171113209_ekleee.resx">
-      <DependentUpon>202202171113209_ekleee.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202202181037268_ekletbl.resx">
+      <DependentUpon>202202181037268_ekletbl.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

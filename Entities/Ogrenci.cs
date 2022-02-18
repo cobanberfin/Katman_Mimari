@@ -15,9 +15,10 @@ namespace Entities
         public string Ad { get; set; }
         public string Soyad { get; set; }
         public string Adres { get; set; }
-        public DateTime Yas { get; set; }
+        public int Yas { get; set; }
         [ForeignKey("Sinif")]
         public int Kademe { get; set; }
+        public string Sube{ get; set; }
         public Sinif Sinif { get; set; }
     }
 }

@@ -7,13 +7,13 @@ namespace Katmanlı_DAL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class ekledb : IMigrationMetadata
+    public sealed partial class ekletbl : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(ekledb));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(ekletbl));
         
         string IMigrationMetadata.Id
         {
-            get { return "202202170633297_ekledb"; }
+            get { return "202202181037268_ekletbl"; }
         }
         
         string IMigrationMetadata.Source

@@ -37,6 +37,8 @@ namespace KatmanlıMimari.Controllers
                 Sinif s = new Sinif();
                 s.Sube = sm.Sinif.Sube;
                 s.Kademe = sm.Sinif.Kademe;
+                if(repSinif.Listele().Where(x=>x.Sube==sm.Sinif.Sube && x.Kademe == sm.Sinif.Kademe).Count() == null) { s.sinifMevcut = 0; }
+                else { s.sinifMevcut = sm.Sinif.sinifMevcut; }
                 s.sinifMevcut = sm.Sinif.sinifMevcut;
                 repSinif.Ekle(s);
                 repSinif.Guncel();

@@ -102,6 +102,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OgrenciController.cs" />
     <Compile Include="Controllers\SinifController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -120,6 +121,10 @@
     <Content Include="Views\Sinif\Ekle.cshtml" />
     <Content Include="Views\Sinif\Guncelle.cshtml" />
     <Content Include="Views\Sinif\Sube.cshtml" />
+    <Content Include="Views\Ogrenci\Index.cshtml" />
+    <Content Include="Views\Ogrenci\Ekle.cshtml" />
+    <Content Include="Views\Ogrenci\Guncelle.cshtml" />
+    <Content Include="Views\Ogrenci\Detaylar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -142,6 +147,10 @@
     <ProjectReference Include="..\Entities\Entities.csproj">
       <Project>{D7317CCE-C6EC-43A7-BA2D-49C73A75903F}</Project>
       <Name>Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Katmanlı_DAL\DataAcess.csproj">
+      <Project>{2E975951-09EB-4110-AF6B-26102A4C9769}</Project>
+      <Name>DataAcess</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
